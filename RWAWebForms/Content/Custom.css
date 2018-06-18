@@ -1,0 +1,142 @@
+﻿body {
+    font-family: 'Segoe UI';
+    background-color: #efefef;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2em;
+    margin: 5px 0px 7px 0px;
+    color: #000;
+    border-radius: 10px;
+}
+
+
+.repositoryInfo {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.mainContent {
+    /*width: 1010px;*/
+    /*min-height: 300px;*/
+    margin: 30px auto 0;
+    border: 0px solid #ccc;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+footer {
+    text-align: center;
+}
+
+.footerParagraph {
+    display: inline-block;
+}
+
+nav a {
+    width: 160px;
+    margin: 0px 20px;
+}
+
+nav {
+    text-align: center;
+    /*height:44px;
+    line-height:44px;*/
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.pageContent span {
+    font-weight: bold;
+}
+
+/*input[type="checkbox"] {
+    margin-left:0px;
+}*/
+
+div.myCb {
+    margin-left: 20px;
+}
+
+    div.myCb label {
+        padding-left: 5px;
+    }
+
+div.loginForm {
+    padding: 20px;
+}
+
+div.validationSummary {
+    padding-top: 20px;
+}
+
+/* za kk */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.personContainer {
+    margin: 10px;
+    padding: 10px;
+    width: 310px;
+    display: inline-block;
+    border: 1px solid #dedede;
+}
+
+td {
+    padding: 5px;
+}
+
+table.ucPersonTable span {
+    font-weight: bold;
+}
+
+span.glyphicon-save {
+    color:#0094ff;
+}
+
+table input[type="submit"] {
+    width: 80px;
+}
+
+/* za ADD PERSON */
+div.addPersonForm {
+    margin:auto;
+    padding:20px;
+}
+
+div.addPersonForm > div > div > span {
+    font-weight:bold;
+}
+
+/* LIST users */
+div#MyAccordion {
+    padding:20px;
+}
+
+.myHyperLink {
+    display:block;
+}
+
+.gridViewLabels {
+    font-weight:normal;
+}
+
+.ucValidators {
+    color:red;
+}
+
+/*div#MyAccordion table {
+
+}*/

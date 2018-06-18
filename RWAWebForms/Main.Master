@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="RWAWebForms.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.12.4.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container mainContent">
+            <header>
+                <div class="row">
+                    <%-- place holder za stavit naslov ovisno di se nalazimo --%>
+                    <div class="col-sm-6 text-left">
+                        <asp:ContentPlaceHolder ID="titleContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <%-- oni dugmići za slat mail i odjavit se --%>
+                    <div class="col-sm-6 text-right">
+                        <asp:Button ID="btnEmailAdmin" ToolTip="Send E-mail" runat="server" Text="..." CssClass="btn btn-sm btn-success invisible" />
+                        <asp:Button ID="btnLogOut" OnClick="btnLogOut_Click" runat="server" Text="<%$ Resources:MasterStrings, btnLogOutText %>" CssClass="btn btn-sm btn-warning invisible" />
+                    </div>
+                </div>
+
+                <hr style="margin-top: 0px;" />
+                <%-- lokalizirana navigacija preko link buttonža --%>
+                <nav>
+                    <%-- ADD USERS --%>
+                    <asp:LinkButton ID="lbAddUsers" PostBackUrl="~/AddNewUser.aspx" runat="server" Text="test" CssClass="btn btn-default">
+                        <span class="glyphicon glyphicon-floppy-save"></span>
+                        <asp:Label ID="Label2" runat="server" Text="<%$ Resources:MasterStrings, lbAddUsersText %>"></asp:Label>
+                    </asp:LinkButton>
+                    <%-- UPDATE USERS --%>
+                    <asp:LinkButton ID="lbUpdateUsers" runat="server" PostBackUrl="~/EditUsers.aspx" CssClass="btn btn-default">
+                        <span class="glyphicon glyphicon-share"></span>
+                        <asp:Label ID="Label3" runat="server" Text="<%$ Resources:MasterStrings, lbUpdateUsersText %>"></asp:Label>
+                    </asp:LinkButton>
+                    <%-- USERS LIST --%>
+                    <asp:LinkButton ID="lbDisplayUsers" runat="server" PostBackUrl="~/UsersList.aspx" CssClass="btn btn-default">
+                        <span class="glyphicon glyphicon-list"></span>
+                        <asp:Label ID="Label4" runat="server" Text="<%$ Resources:MasterStrings, lbDisplayUsersText %>"></asp:Label>
+                    </asp:LinkButton>
+                    <%-- SETTINGS --%>
+                    <asp:LinkButton ID="lbSettings" runat="server" PostBackUrl="~/Settings.aspx" CssClass="btn btn-default">
+                        <span class="glyphicon glyphicon-cog"></span>
+                        <asp:Label ID="Label5" runat="server" Text="<%$ Resources:MasterStrings, lbSettingsText %>"></asp:Label>
+                    </asp:LinkButton>
+                </nav>
+                <hr />
+            </header>
+            <%-- glavni dio sadržaja, sve se mijenja ovisno o stranici --%>
+            <section class="mainSection">
+                <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <hr />
+            <%-- FOOTER - uglavnom se zgenerira u code behind-u --%>
+            <footer>
+                <p>
+                    <%: DateTime.Now.ToLongDateString() %> | RWA - <span style="color: red;">Web Forms</span> -
+                    <asp:Label ID="Label1" runat="server" Text="<%$ Resources:MasterStrings, projektString %>"></asp:Label>
+                </p>
+                <p class="badge repositoryInfo">
+                    <asp:Label ID="lblRepo" runat="server" Text="..."></asp:Label>
+                </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
