@@ -38,8 +38,6 @@ namespace RWAWebForms.Models
                 }
                 if (IsAdminOnlyPage && !(Session["CurrentUser"] as User).IsAdmin)
                 {
-                    HttpCookie kuki = new HttpCookie("notifyNonAdmin");
-                    Response.Cookies.Add(kuki);
                     Response.Redirect("~/UsersList.aspx");
                 }
             }

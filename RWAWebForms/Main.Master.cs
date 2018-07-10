@@ -1,10 +1,5 @@
 ﻿using RWAWebForms.Models.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace RWAWebForms
 {
@@ -17,9 +12,7 @@ namespace RWAWebForms
             {
                 User currentUser = Session["CurrentUser"] as User;
                 btnEmailAdmin.Text = $"{currentUser.ToString()}";
-                // DOVRŠIT OVI DIO ---------------------------------------------------
-                btnEmailAdmin.OnClientClick = $"return window.open('mailto:{currentUser.Emails[0].UserName}','RWA je najjači!')";
-                //lbtnEmailAdmin.Text = $"{currentUser.ToString()}";
+                btnEmailAdmin.Attributes["href"] = $"mailto:{currentUser.Emails[0].UserName}";
             }
         }
 
@@ -41,10 +34,6 @@ namespace RWAWebForms
             if (Request.Cookies["RememberMeUser"] != null)
             {
                 Response.Cookies["RememberMeUser"].Expires = DateTime.Now.AddDays(-1);
-            }
-            if (Request.Cookies["notifyNonAdmin"] != null)
-            {
-                Response.Cookies["notifyNonAdmin"].Expires = DateTime.Now.AddDays(-1);
             }
             Response.Redirect("~/Login.aspx");
         }

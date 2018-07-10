@@ -1,10 +1,10 @@
 3#RWA#Dinosaurus#123#True#23454323456#Split#5;dinko@mail.com|
-4#Anica#Anić#123#True#1234323434#Osijek#6;ana@mail.com|
+4#Anica#Anić#123#False#1234323434#Osijek#6;ana@mail.com|
 5#Karlo#Kečap#123#False#2234567888777#Varaždin#1;kecap@mail.com|2;karlo@ngh.hr|
 8#Dosadni#User#333#False#123234#Zagreb#9;jadnaMuMati@mail.com|
 9#Jeah#Woohoo#111#False#123234#Zagreb#10;nes@nes.bla|
 10#Suzi#Rustique#123#False#434343#Split#11;prvi@mail.com|12;drugi@mail.com|28;treci@mail.com|29;CETVRTI@mail.LOL|
-11#Dunja#Horvat#111#False#1234567#Varaždin#13;prviMail@mail.com|14;drugiMail@mail.com|15;treciMail@mail.com|
+11#Dunja#Horvat#111#True#1234567#Varaždin#13;prviMail@mail.com|14;drugiMail@mail.com|15;petnaesti@mail.com|
 12#OpetMalo#MaloTest#1#False#2342342#Varaždin#16;nesto@mail.com|17;tristoTRI@bla.hr|18;ideees@gugl.com|
 14#Matea#Poljud#1#False#12345234#Rijeka#21;hajduk@mail.de|
-15#Branko#Brancin#1#False#23454323456#Pula#22;bbrankic@mail.hr|23;brankicb@mail.hr|24;punomejlova@mail.hr|25;jakopuno@gmail.lol|26;uvau@mail.hr|27;dostaVise@mail.rs|
+15#Branko#Brancin#1#False#23454323456#Pula#22;brancin@mail.hr|23;brankicb@mail.hr|24;punomejlova@mail.hr|25;jakopuno@gmail.lol|26;uvau@mail.hr|27;dostaVise@mail.rs|

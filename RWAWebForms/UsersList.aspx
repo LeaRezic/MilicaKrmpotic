@@ -1,16 +1,25 @@
 ﻿<%@ Page Title="User list" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="UsersList.aspx.cs" Inherits="RWAWebForms.UsersList" Culture="auto" meta:resourcekey="PageResource1" UICulture="auto" %>
+<%--EnableEventValidation="false"--%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%-- tu je skripta di imam za prikaz gumba mastera + apliciranje klase na nav button --%>
     <script src="Scripts/myScript.js"></script>
-    <script src="Scripts/usersListScript.js"></script>
     <script>
-        // pozivanje svega na window.onload
+
+        function nonAdminYouShallNotPass() {
+            var adminOnlyButtons = document.getElementsByClassName("adminOnly");
+            for (var i = 0; i < adminOnlyButtons.length; i++) {
+                adminOnlyButtons[i].onclick = function (e) {
+                    e.preventDefault();
+                    toastr.warning("Za pristup stranici morate imati prava administratora.");
+                    document.getElementById("lbDisplayUsers").focus();
+                }
+            }
+        }
+
         window.onload = function () {
             showMasterLoginEmailButtons();
             markCurrentNavButton("lbDisplayUsers");
-            hideOrStyleEditButtons();
-            //test();
+
         };
     </script>
 </asp:Content>
@@ -37,14 +46,16 @@
             <%-- sadržaj grid viewa --%>
             <div id="gridViewContent" class="panel-collapse collapse in">
                 <div class="panel-body">
-                    <asp:GridView ID="myGridView" runat="server" AutoGenerateColumns="False" DataKeyNames="IDUser" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnRowDataBound="myGridView_RowDataBound" OnRowCancelingEdit="myGridView_RowCancelingEdit" OnRowEditing="myGridView_RowEditing" OnRowUpdating="myGridView_RowUpdating" CssClass="table table-hover" meta:resourcekey="myGridViewResource1">
+                    <asp:GridView ID="mojGV" runat="server" AutoGenerateColumns="False" DataKeyNames="IDUser" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnRowDataBound="myGridView_RowDataBound" OnRowCancelingEdit="myGridView_RowCancelingEdit" OnRowEditing="myGridView_RowEditing" OnRowUpdating="myGridView_RowUpdating" CssClass="table table-hover" meta:resourcekey="myGridViewResource1">
                         <Columns>
                             <asp:TemplateField HeaderText="First Name" meta:resourcekey="TemplateFieldResource1"></asp:TemplateField>
                             <asp:TemplateField HeaderText="Last Name" meta:resourcekey="TemplateFieldResource2"></asp:TemplateField>
                             <asp:TemplateField HeaderText="E-mail addresses" meta:resourcekey="TemplateFieldResource3"></asp:TemplateField>
                             <asp:TemplateField HeaderText="Telephone" meta:resourcekey="TemplateFieldResource4"></asp:TemplateField>
                             <asp:TemplateField HeaderText="Status" meta:resourcekey="TemplateFieldResource5"></asp:TemplateField>
-                            <asp:CommandField ShowEditButton="True" meta:resourcekey="CommandFieldResource1" ButtonType="Button" />
+                            <asp:CommandField ShowEditButton="True" meta:resourcekey="CommandFieldResource1" ButtonType="Button" CausesValidation="False" >
+                            <ControlStyle CssClass="btn-link" />
+                            </asp:CommandField>
                         </Columns>
                         <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                         <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />

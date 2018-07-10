@@ -88,6 +88,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Access denied, you&apos;re not an admin - ha, ha!.
+        /// </summary>
+        internal static string NonAdminMessage {
+            get {
+                return ResourceManager.GetString("NonAdminMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data successfully updated.
         /// </summary>
         internal static string UpdateMessage {

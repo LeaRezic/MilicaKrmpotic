@@ -90,11 +90,7 @@ namespace RWAWebForms.Models.BL
         // POSTOJI LI VEĆ TAKI MAIL
         private bool IsEmailUnique(string userName)
         {
-            if (repo.GetEmails().Exists(x => x.UserName == userName))
-            {
-                return false;
-            }
-            return true;
+            return !repo.GetEmails().Exists(x => x.UserName == userName);
         }
 
         

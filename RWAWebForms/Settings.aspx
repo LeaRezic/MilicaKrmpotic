@@ -1,9 +1,11 @@
 ﻿<%@ Page Title="Settings" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Settings.aspx.cs" Inherits="RWAWebForms.Settings" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="Scripts/myScript.js"></script>
     <script>
-        window.onload = function () { showMasterLoginEmailButtons(); markCurrentNavButton("lbSettings"); };
+        window.onload = function () {
+            showMasterLoginEmailButtons();
+            markCurrentNavButton("lbSettings");
+        };
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="titleContent" runat="server">

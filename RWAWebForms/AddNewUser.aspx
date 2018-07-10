@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="Add new user" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="AddNewUser.aspx.cs" Inherits="RWAWebForms.AddNewUser" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="Scripts/myScript.js"></script>
-    <script src="Scripts/toastrScript.js"></script>
     <script>
-        window.onload = function () { showMasterLoginEmailButtons(); markCurrentNavButton("lbAddUsers"); };
+        window.onload = function () {
+            showMasterLoginEmailButtons();
+            markCurrentNavButton("lbAddUsers");
+        };
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="titleContent" runat="server">

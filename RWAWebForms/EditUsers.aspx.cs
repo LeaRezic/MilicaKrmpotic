@@ -39,7 +39,15 @@ namespace RWAWebForms
                 string toastrType = details[0];
                 string fullUserName = details[1];
                 string message = details[2];
-                ClientScript.RegisterStartupScript(GetType(), "myToastr", $"showToastr('{toastrType}','{fullUserName}<br>{message}')", true);
+                if (toastrType == "info")
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "extraToastr", $"showToastr('{toastrType}','{fullUserName}<br>{message}');showToastr('success','{fullUserName}<br>{Resources.ToastrResources.UpdateMessage}');", true);
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "myToastr", $"showToastr('{toastrType}','{fullUserName}<br>{message}')", true);
+                }
+                
                 Response.Cookies["myNotify"].Expires = DateTime.Now.AddDays(-1);
                 Request.Cookies["myNotify"].Expires = DateTime.Now.AddDays(-1);
             }

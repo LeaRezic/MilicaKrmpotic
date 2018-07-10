@@ -10,7 +10,7 @@ namespace RWAWebForms.Models.DAL
     public class FileRepo : IRepo
     {
         // neke interne stvari
-        public static string PATH = @"C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\RWA_WebFormsProject_LeaRezic\RWAWebForms\App_Data\Data.txt";
+        public static string PATH = @"C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\App_Data\Data.txt";
 
         // u konstruktoru stvori file ak već ne postoji
         public FileRepo()

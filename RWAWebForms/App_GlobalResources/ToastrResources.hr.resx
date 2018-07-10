@@ -126,6 +126,9 @@
   <data name="EmailMessage" xml:space="preserve">
     <value>Email uspjesno azuriran.</value>
   </data>
+  <data name="NonAdminMessage" xml:space="preserve">
+    <value>Za pristup stranici morate imati prava administratora.</value>
+  </data>
   <data name="UpdateMessage" xml:space="preserve">
     <value>Podaci uspjesno azurirani.</value>
   </data>

@@ -3,8 +3,6 @@
 <%@ Reference Control="~/Controls/DisplayUserControl.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="Scripts/myScript.js"></script>
-    <script src="Scripts/toastrScript.js"></script>
     <script>
         window.onload = function () { showMasterLoginEmailButtons(); markCurrentNavButton("lbUpdateUsers"); };
     </script>

@@ -8,6 +8,7 @@
     <script src="Scripts/jquery-1.12.4.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/myScript.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/toastr.css" rel="stylesheet" />
     <link href="Content/Custom.css" rel="stylesheet" />
@@ -20,13 +21,13 @@
             <header>
                 <div class="row">
                     <%-- place holder za stavit naslov ovisno di se nalazimo --%>
-                    <div class="col-sm-6 text-left">
+                    <div class="col-sm-8 text-left">
                         <asp:ContentPlaceHolder ID="titleContent" runat="server">
                         </asp:ContentPlaceHolder>
                     </div>
                     <%-- oni dugmići za slat mail i odjavit se --%>
-                    <div class="col-sm-6 text-right">
-                        <asp:Button ID="btnEmailAdmin" ToolTip="Send E-mail" runat="server" Text="..." CssClass="btn btn-sm btn-success invisible" />
+                    <div class="col-sm-4 text-right">
+                        <asp:HyperLink ID="btnEmailAdmin" ToolTip="Send E-mail" runat="server" Text="..." CssClass="btn btn-sm btn-success invisible" />
                         <asp:Button ID="btnLogOut" OnClick="btnLogOut_Click" runat="server" Text="<%$ Resources:MasterStrings, btnLogOutText %>" CssClass="btn btn-sm btn-warning invisible" />
                     </div>
                 </div>
@@ -35,12 +36,12 @@
                 <%-- lokalizirana navigacija preko link buttonža --%>
                 <nav>
                     <%-- ADD USERS --%>
-                    <asp:LinkButton ID="lbAddUsers" PostBackUrl="~/AddNewUser.aspx" runat="server" Text="test" CssClass="btn btn-default">
+                    <asp:LinkButton ID="lbAddUsers" PostBackUrl="~/AddNewUser.aspx" runat="server" Text="test" CssClass="btn btn-default adminOnly">
                         <span class="glyphicon glyphicon-floppy-save"></span>
                         <asp:Label ID="Label2" runat="server" Text="<%$ Resources:MasterStrings, lbAddUsersText %>"></asp:Label>
                     </asp:LinkButton>
                     <%-- UPDATE USERS --%>
-                    <asp:LinkButton ID="lbUpdateUsers" runat="server" PostBackUrl="~/EditUsers.aspx" CssClass="btn btn-default">
+                    <asp:LinkButton ID="lbUpdateUsers" runat="server" PostBackUrl="~/EditUsers.aspx" CssClass="btn btn-default adminOnly">
                         <span class="glyphicon glyphicon-share"></span>
                         <asp:Label ID="Label3" runat="server" Text="<%$ Resources:MasterStrings, lbUpdateUsersText %>"></asp:Label>
                     </asp:LinkButton>
@@ -50,7 +51,7 @@
                         <asp:Label ID="Label4" runat="server" Text="<%$ Resources:MasterStrings, lbDisplayUsersText %>"></asp:Label>
                     </asp:LinkButton>
                     <%-- SETTINGS --%>
-                    <asp:LinkButton ID="lbSettings" runat="server" PostBackUrl="~/Settings.aspx" CssClass="btn btn-default">
+                    <asp:LinkButton ID="lbSettings" runat="server" PostBackUrl="~/Settings.aspx" CssClass="btn btn-default adminOnly">
                         <span class="glyphicon glyphicon-cog"></span>
                         <asp:Label ID="Label5" runat="server" Text="<%$ Resources:MasterStrings, lbSettingsText %>"></asp:Label>
                     </asp:LinkButton>

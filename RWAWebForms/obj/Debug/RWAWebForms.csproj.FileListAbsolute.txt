@@ -84,3 +84,25 @@ C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\RWA_WebFormsProject_LeaRezic – 
 C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\RWA_WebFormsProject_LeaRezic – kopija\RWAWebForms\obj\Debug\RWAWebForms.csproj.CopyComplete
 C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\RWA_WebFormsProject_LeaRezic – kopija\RWAWebForms\obj\Debug\RWAWebForms.dll
 C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\RWA_WebFormsProject_LeaRezic – kopija\RWAWebForms\obj\Debug\RWAWebForms.pdb
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\csc.exe
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\vbc.exe
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\VBCSCompiler.exe
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\RWAWebForms.dll.config
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\RWAWebForms.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\RWAWebForms.pdb
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\obj\Debug\RWAWebForms.csproj.CoreCompileInputs.cache
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\obj\Debug\RWAWebForms.csproj.CopyComplete
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\obj\Debug\RWAWebForms.dll
+C:\Users\Lea\Documents\Algebra\IV Semestar\RWA\ProjektniZadaci\WebForms\RWA_WebFormsProject_LeaRezic\RWAWebForms\obj\Debug\RWAWebForms.pdb

@@ -10,7 +10,7 @@
 namespace RWAWebForms {
     
     
-    public partial class UsersList {
+    public partial class MrtviGrid {
         
         /// <summary>
         /// lblTitle control.

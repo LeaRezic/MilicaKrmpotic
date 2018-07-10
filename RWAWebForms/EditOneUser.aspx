@@ -5,13 +5,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script>
-        function showMasterLoginEmailButtons() {
-            var btnEmail = document.getElementById("btnEmailAdmin");
-            var btnLogOut = document.getElementById("btnLogOut");
-            btnEmail.style.visibility = "visible";
-            btnLogOut.style.visibility = "visible";
-        }
-        window.onload = function () { showMasterLoginEmailButtons(); };
+        window.onload = function () {
+            showMasterLoginEmailButtons();
+        };
     </script>
 </asp:Content>
 

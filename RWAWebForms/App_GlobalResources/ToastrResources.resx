@@ -126,6 +126,9 @@
   <data name="EmailMessage" xml:space="preserve">
     <value>Email successfully updated</value>
   </data>
+  <data name="NonAdminMessage" xml:space="preserve">
+    <value>Access denied, you're not an admin - ha, ha!</value>
+  </data>
   <data name="UpdateMessage" xml:space="preserve">
     <value>Data successfully updated</value>
   </data>

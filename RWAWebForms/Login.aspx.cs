@@ -1,12 +1,7 @@
 ﻿using RWAWebForms.Models;
-using RWAWebForms.Models.BL;
 using RWAWebForms.Models.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace RWAWebForms
 {
@@ -75,22 +70,14 @@ namespace RWAWebForms
         // provjeri je li app admin
         private bool LoginIsApplicationAdmin(string userName, string hashedPassword)
         {
-            if ((userName == (Application["ApplicationAdmin"] as User).Emails[0].UserName) && PasswordManager.IsMatchingHash((Application["ApplicationAdmin"] as User).Password, hashedPassword))
-            {
-                return true;
-            }
-            return false;
+            return (userName == (Application["ApplicationAdmin"] as User).Emails[0].UserName) && PasswordManager.IsMatchingHash((Application["ApplicationAdmin"] as User).Password, hashedPassword);
         }
 
         // provjeri je li korisnik u bazi/file-u
         private bool LoginIsRegisteredUser(string userName, string hashedPassword)
         {
             User user = DataManager.GetUserByEmail(userName);
-            if ((user != null) && PasswordManager.IsMatchingHash(user.Password, hashedPassword))
-            {
-                return true;
-            }
-            return false;
+            return (user != null) && PasswordManager.IsMatchingHash(user.Password, hashedPassword);
         }
 
         // redirecta, radi repo kuki po potrebi, u session meće tog korisnika iz kukija
